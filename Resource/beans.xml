@@ -6,9 +6,9 @@
  <bean id="bell" class="main.Bell">
  <property name="name" value="Tcar colocol"></property>
  </bean>
-    <bean id="person" class="main.Student">
+    <bean id="person" class="main.Student" autowire="byType">
     <property name="name" value="#{bell.getName().toUpperCase()+' balabol'[3]}"></property>
-    <property name="bell" ref="bell"></property>
+    
        
     </bean>
 
