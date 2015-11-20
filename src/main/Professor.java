@@ -1,6 +1,9 @@
 package main;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Professor implements Person{
+	@Autowired
 private Bell bell;
 
 	public Bell getBell() {

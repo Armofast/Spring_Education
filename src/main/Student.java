@@ -1,7 +1,10 @@
 package main;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Student implements Person {
 	String name;
+	@Autowired
 	private Bell bell;
 
 
