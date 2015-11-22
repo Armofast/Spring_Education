@@ -1,11 +1,15 @@
 package main;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component("person")
 public class Student implements Person {
+	@Value("Alex zahv")
 	String name;
-@Autowired
-private Bell bell;
+	@Autowired
+	private Bell bell;
 
 	public Bell getBell() {
 		return bell;
